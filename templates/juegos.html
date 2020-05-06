@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Consulta de juegos{% endblock %}
+{% block content %}
+<div id="main">
+    <div class="inner">
+        <header>
+            <h1>Consultar los juegos de MSX disponibles</h1>
+            <form method="POST" action="/listajuegos">
+                <label>Nombre del Juego</label>
+                <input type="text" name="numbre_juego" placeholder="Nombre Juego"/>
+                <input type="submit" value="Buscar" />
+            </form>
+        </header>
+    </div>
+</div>
+{% endblock %}
