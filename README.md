@@ -3,11 +3,11 @@
 Queremos hacer una aplicación web que nos ayude a controlar nuestra colección de juegos de nuestro ordenador preferido: el MSX.
 Vamos a crear una aplicación con las siguientes características:
 
-* La aplicación debe tener una hoja de estilo. Para ello lo mejor es que busques una plantilla HTML/CSS: con lo que ya tienes la hoja de estilo y
+* La aplicación debe tener una hoja de estilo. Para ello lo mejor es que busques una plantilla HTML/CSS: con lo que ya tienes la hoja de estilo y :white_check_mark:
 
-* Las plantillas que uses en la aplicación se heredarán de la plantilla base.html (esta plantilla la puedes crear a partir de la plantilla HTML que has buscado).
+* Las plantillas que uses en la aplicación se heredarán de la plantilla base.html (esta plantilla la puedes crear a partir de la plantilla HTML que has buscado). :white_check_mark:
 
-* La plantilla base tendrá al menos dos bloques: uno para indicar el título y otro para poner el contenido.
+* La plantilla base tendrá al menos dos bloques: uno para indicar el título y otro para poner el contenido.:white_check_mark:
 
 * La página principal tendrá una imagen con el logotipo MSX al pulsar sobre está imagen  nos llevará a a página /juegos.
 
