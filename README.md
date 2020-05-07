@@ -21,7 +21,7 @@ Vamos a crear una aplicación con las siguientes características:
 
 * Como ves, estamos volviendo a hacer el patrón de diseño : Lista - detalle. La lista está en la página /listajuegos y el detalle está en la página /juego/identificador donde aparecerán todos los datos del juego que tenga ese identificador. Si el identificador no existe devolverá un 404. Tendrá un enlace que me devuelve a la página /juegos. :white_check_mark:
 
-* La aplicación hay que desplegarla en heroku.
+* La aplicación hay que desplegarla en heroku.:white_check_mark:
 
 Hasta aquí es suficiente para sacar la mitad de los puntos que vale la práctica. Te propongo varias mejoras que irán sumando puntos al resultados final, tienes que hacerlas en orden y puede hacer las que quieras.
 
