@@ -19,10 +19,16 @@ def listajuegos():
     nombre_juego=request.form.get("nombre")
     lista_nombres=[]
     lista_desarrolladores=[]
+    lista_ids=[]
     for juegos in datos:
-        if str(juegos["nombre"]).startswith(nombre_juego):
+        if nombre_juego == "":
             lista_desarrolladores.append(juegos["desarrollador"])
             lista_nombres.append(juegos["nombre"])
-    return render_template("listajuegos.html", lista_nombres=lista_nombres, lista_desarrolladores=lista_desarrolladores)
+            lista_ids.append(juegos["id"])
+        elif str(juegos["nombre"]).startswith(nombre_juego):
+            lista_desarrolladores.append(juegos["desarrollador"])
+            lista_nombres.append(juegos["nombre"])
+            lista_ids.append(juegos["id"])
+    return render_template("listajuegos.html", lista_nombres=lista_nombres, lista_desarrolladores=lista_desarrolladores, lista_ids=lista_ids)
 
 app.run('0.0.0.0', debug=True)
