@@ -31,4 +31,14 @@ def listajuegos():
             lista_ids.append(juegos["id"])
     return render_template("listajuegos.html", lista_nombres=lista_nombres, lista_desarrolladores=lista_desarrolladores, lista_ids=lista_ids)
 
+@app.route('/juego/<int:identificador>')
+def juego_id(identificador):
+    for juegos in datos:
+        if juegos["id"] == identificador:
+            return render_template('juego_id.html', juego=juegos)
+        
+    return abort(404)
+
+
+
 app.run('0.0.0.0', debug=True)
