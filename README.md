@@ -25,9 +25,9 @@ Vamos a crear una aplicación con las siguientes características:
 
 Hasta aquí es suficiente para sacar la mitad de los puntos que vale la práctica. Te propongo varias mejoras que irán sumando puntos al resultados final, tienes que hacerlas en orden y puede hacer las que quieras.
 
-1. Realizar la búsqueda utilizando una sola ruta: Es decir que en la página /juegos este el formulario de búsqueda y la lista de juegos seleccionado. La información del formulario se enviará a la misma página. No existirá la página /listajuegos.
+1. Realizar la búsqueda utilizando una sola ruta: Es decir que en la página /juegos este el formulario de búsqueda y la lista de juegos seleccionado. La información del formulario se enviará a la misma página. No existirá la página /listajuegos. :white_check_mark:
 
-2. Como el protocolo HTTP no tiene estado, no es capaz de acordarse de los datos anteriores, por lo tanto cada vez que hagáis una búsqueda aparecerá la lista de juegos pero el formulario estará vacío, no recuerda lo que pusimos. Modifica el programa para que aparezca en el formulario la cadena que habías introducido en la búsqueda (Pista: tendrá que utilizar el atributo value del elemento input).
+2. Como el protocolo HTTP no tiene estado, no es capaz de acordarse de los datos anteriores, por lo tanto cada vez que hagáis una búsqueda aparecerá la lista de juegos pero el formulario estará vacío, no recuerda lo que pusimos. Modifica el programa para que aparezca en el formulario la cadena que habías introducido en la búsqueda (Pista: tendrá que utilizar el atributo value del elemento input). :white_check_mark:
 
 3. Añade otro criterio de búsqueda, es decir vas a poder buscar por nombre y por categoría. Para buscar por categoría vas a generar dinámicamente una lista desplegable (elemento select) en el formulario con las categorías de los juegos). Por lo tanto podremos buscar un juego que empiece por una cadena de una determinada categoría.
 

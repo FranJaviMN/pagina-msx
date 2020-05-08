@@ -7,11 +7,11 @@
             <h1>Consultar los juegos de MSX disponibles</h1>
             <form method="POST" action="/juegos ">
                 <label>Nombre del Juego</label>
-                <input type="text" name="nombre" placeholder="Nombre Juego" />
+                <input type="text" name="nombre" placeholder="Nombre Juego" value="{{nombre_juego}}"/>
                 <input type="submit" value="Buscar" />
             </form>
 
-            {% if lista_nombres -%}
+            {% if lista_nombres -%}  
             <h1>Consultar los juegos de MSX disponibles</h1>
             <table>
                 <caption>Resultados de la busqueda</caption>

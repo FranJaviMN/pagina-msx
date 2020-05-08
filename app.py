@@ -28,7 +28,7 @@ def juegos():
                 lista_desarrolladores.append(juegos["desarrollador"])
                 lista_nombres.append(juegos["nombre"])
                 lista_ids.append(juegos["id"])
-        return render_template("juegos.html", lista_nombres=lista_nombres, lista_desarrolladores=lista_desarrolladores, lista_ids=lista_ids)
+        return render_template("juegos.html", nombre_juego=nombre_juego, lista_nombres=lista_nombres, lista_desarrolladores=lista_desarrolladores, lista_ids=lista_ids)
 
 
 @app.route('/juego/<int:identificador>')
