@@ -5,11 +5,49 @@
     <div class="inner">
         <header>
             <h1>Consultar los juegos de MSX disponibles</h1>
-            <form method="POST" action="/listajuegos">
+            <form method="POST" action="/juegos ">
                 <label>Nombre del Juego</label>
-                <input type="text" name="nombre" placeholder="Nombre Juego"/>
+                <input type="text" name="nombre" placeholder="Nombre Juego" />
                 <input type="submit" value="Buscar" />
             </form>
+
+            {% if lista_nombres -%}
+            <h1>Consultar los juegos de MSX disponibles</h1>
+            <table>
+                <caption>Resultados de la busqueda</caption>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Desarrollador</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <th>
+                        {% for juegos in lista_nombres -%}
+
+                        <p>{{juegos}}</p>
+
+                        {% endfor -%}
+                    </th>
+
+                    <th>
+                        {% for desarrollador in lista_desarrolladores -%}
+
+                        <p>{{desarrollador}}</p>
+
+                        {% endfor -%}
+                    </th>
+
+                    <th>
+                        {% for id in lista_ids -%}
+
+                        <a href="/juego/{{id}}">
+                            <p>Detalles</p>
+                        </a>
+                        {% endfor -%}
+                        {% endif -%}
+                    </th>
+                </tr>
+            </table>
         </header>
     </div>
 </div>
